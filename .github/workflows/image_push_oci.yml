@@ -17,7 +17,7 @@ jobs:
     - name: Log in to OCI Container Registry
       uses: docker/login-action@v1
       with:
-        registry: <region-key>.ocir.io
+        registry: jed.ocir.io
         username: ${{ secrets.OCI_USERNAME }}
         password: ${{ secrets.OCI_AUTH_TOKEN }}
 
@@ -27,4 +27,4 @@ jobs:
         context: .
         file: Dockerfile
         push: true
-        tags: me-jeddah-1.ocir.io/axnfm4jb3i73/nodejs-repo:latest
+        tags: jed.ocir.io/axnfm4jb3i73/nodejs-repo:latest
